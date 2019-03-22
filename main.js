@@ -24,6 +24,9 @@ easyButton.addEventListener("click", function(){
       blobs[i].style.display = "none";
     }
   }
+  messageDisplay.textContent = "";
+  resetButton.textContent = "Reset";
+  header.style.backgroundColor = "#a5a5a5";
 });
 
 // hard mode
@@ -38,6 +41,9 @@ hardButton.addEventListener("click", function(){
     blobs[i].style.background = colors[i];
     blobs[i].style.display = "block";
   }
+  resetButton.textContent = "Reset";
+  header.style.backgroundColor = "#a5a5a5";
+  messageDisplay.textContent = "";
 });
 
 resetButton.addEventListener("click", function(){
